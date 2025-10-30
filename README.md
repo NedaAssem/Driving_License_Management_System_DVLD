@@ -6,12 +6,24 @@ It follows a **3-tier architecture** and uses **ADO.NET** to interact with a **S
 
 ---
 
-## ⚙️ Main Features
-- Manage people, drivers, and user information  
-- Add, renew, and replace driving licenses  
-- Handle detained and international licenses  
-- Record and manage test results  
-- User login and authentication system  
+## 🚗 Features
+
+- **User Management:** Add, update, delete, or freeze user accounts with role-based permissions.  
+- **Person Management:** Register new people and manage their personal information.  
+- **License Services:**  
+  - Issue new driving licenses for various categories.  
+  - Renew, replace lost or damaged licenses.  
+  - Release detained licenses.  
+  - Issue international driving licenses.  
+- **Application Management:** Create and track service requests with unique application numbers and fees.  
+- **Testing & Scheduling:**  
+  - Schedule vision, written, and practical driving tests.  
+  - Record test results (pass/fail and score).  
+  - Allow retesting for failed applicants after payment.  
+- **Data Validation:** Ensure that each person has a unique national ID and no duplicate active license applications.  
+- **Payment Management:** Handle and track service fees and test payments.  
+- **Local Database (SQL Server):** Store all data locally using ADO.NET.  
+- **Three-Tier Architecture:** Separation between UI, Business Logic, and Data Access layers for better organization and maintainability.
 
 ---
 
