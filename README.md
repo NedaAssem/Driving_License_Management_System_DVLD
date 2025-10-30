@@ -73,6 +73,24 @@ Project
 
 ---
 
+
+---
+
+## 🗄️ Database Setup
+The system uses a local SQL Server database named `DVLD.mdf`.
+
+### Steps to attach the database
+1. Open **SQL Server Management Studio (SSMS)**.  
+2. Right-click **Databases → Attach**.  
+3. Browse to the project folder and select `DVLD.mdf`.  
+4. Click **OK** to attach the database.  
+5. Make sure your project connection string points to the correct database file.
+
+Example connection string:
+
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DVLD.mdf;Integrated Security=True;
+
+
 ## 🔐 Login Information
 
 The login data is stored in the local text file: 
