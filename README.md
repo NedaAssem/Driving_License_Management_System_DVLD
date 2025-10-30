@@ -55,13 +55,20 @@ Project
 - **Type:** SQL Server (LocalDB)  
 - **Connection:** Uses ADO.NET with standard SQL queries.
 - The database contains tables for:
-  - Persons  
-  - Users  
-  - Applications  
-  - Licenses  
-  - Tests  
-  - Application Types  
+  - People  
+  - Users
+  - Drivers  
+  - Applications
+  - Application Types
+  - LocalDrivingLicenseApplications  
   - License Classes  
+  - Licenses
+  - InternationalLicenses   
+  - DetainedLicenses  
+  - Tests
+  - TestAppointments
+  - TestTypes  
+  - Countries  
 
 
 ---
