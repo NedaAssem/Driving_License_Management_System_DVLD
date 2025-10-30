@@ -1,2 +1,99 @@
-# Driving_License_Management_System_DVLD
-A three-tier C# Windows Forms application for managing driving licenses using ADO.NET and SQL Server LocalDB.
+# 🚗 Driving License Management System (DVLD)
+
+## 📘 Overview
+The **Driving License Management System (DVLD)** is a C# Windows Forms application that manages all operations related to driving licenses, such as issuing, renewing, replacing, and managing users and drivers.  
+It follows a **3-tier architecture** and uses **ADO.NET** to interact with a **SQL Server LocalDB** database (`DVLD.mdf`).
+
+---
+
+## ⚙️ Main Features
+- Manage people, drivers, and user information  
+- Add, renew, and replace driving licenses  
+- Handle detained and international licenses  
+- Record and manage test results  
+- User login and authentication system  
+
+---
+
+## 🧱 Technologies Used
+- **C# (.NET Framework 4.7.2)**  
+- **Windows Forms**  
+- **ADO.NET** (SQL Connection, Command, Adapter, DataTable)  
+- **SQL Server LocalDB**  
+
+---
+
+## 🧩 Project Structure
+The project follows a **three-tier architecture** to improve organization and maintainability:
+Project  
+│  
+├── DVLD → User Interface Layer (Windows Forms)   
+│ ├── Applications  
+│ ├── Drivers   
+│ ├── Licenses   
+│ ├── Login   
+│ ├── People   
+│ ├── Tests   
+│ └── User   
+│    
+├── DVLD_Business → Business Logic Layer   
+│ └── (Contains classes for managing system operations)  
+│   
+└── DVLD_DataAccess → Data Access Layer  
+└── (Handles database connections using ADO.NET)   
+
+
+
+---
+
+## 🗄️ Database Setup
+The system uses a local SQL Server database named `DVLD.mdf`.
+
+### Steps to attach the database
+1. Open **SQL Server Management Studio (SSMS)**.  
+2. Right-click **Databases → Attach**.  
+3. Browse to the project folder and select `DVLD.mdf`.  
+4. Click **OK** to attach the database.  
+5. Make sure your project connection string points to the correct database file.
+
+Example connection string:
+```csharp
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DVLD.mdf;Integrated Security=True;
+
+---
+##▶️ How to Run
+
+1. Open the solution file DVLD.sln in Visual Studio.
+
+2. Make sure the startup project is set to DVLD (the UI layer).
+
+3. Check that the database DVLD.mdf is attached and the connection string is correct.
+
+4. Press F5 or click Start to run the application.
+
+5. Login using the credentials stored in the Users.txt file.
+
+---
+
+## 🔑 Login Information
+
+The system requires a username and password to access the dashboard.  
+Login data is stored in the file:
+
+DVLD\bin\Debug
+
+
+The file contains usernames and passwords in plain text.
+
+Example credentials to test the system:
+
+- **Username:** Msaqer77  
+- **Password:** 1234
+
+
+🖼️ Screenshots
+
+You can include screenshots to demonstrate how the system works:
+
+
+
