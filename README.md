@@ -73,7 +73,7 @@ Example connection string:
 Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DVLD.mdf;Integrated Security=True;
 
 ---
-##▶️ How to Run
+## ▶️ How to Run
 
 1. Open the solution file DVLD.sln in Visual Studio.
 
@@ -92,12 +92,7 @@ Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DVLD.mdf;Int
 The system requires a username and password to access the dashboard.  
 Login data is stored in the file:
 
-DVLD\bin\Debug
-
-
-The file contains usernames and passwords in plain text.
-
-Example credentials to test the system:
+DVLD\bin\Debug\data.txt
 
 - **Username:** Msaqer77  
 - **Password:** 1234
