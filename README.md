@@ -69,7 +69,7 @@ The system uses a local SQL Server database named `DVLD.mdf`.
 5. Make sure your project connection string points to the correct database file.
 
 Example connection string:
-```csharp
+
 Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DVLD.mdf;Integrated Security=True;
 
 ---
