@@ -1,17 +1,18 @@
-# 🚗 Driving License Management System (DVLD)
+# 🚘 Driving License Management System (DVLD)
 
-## 📘 Overview
-The **Driving License Management System (DVLD)** is a C# Windows Forms application that manages all operations related to driving licenses, such as issuing, renewing, replacing, and managing users and drivers.  
-It follows a **3-tier architecture** and uses **ADO.NET** to interact with a **SQL Server LocalDB** database (`DVLD.mdf`).
+## 📋 Overview
+The Driving License Management System (DVLD) is a three-tier C# Windows Forms application that helps manage all operations related to driving licenses.  
+It allows users to handle applications, manage tests, issue and renew licenses, and maintain records for drivers and staff.  
+The system was built for academic learning purposes and focuses on database management, ADO.NET, and multi-layered application design.
 
 ---
 
-## 🚗 Features
+## 🧩 Features
 
 - **User Management:** Add, update, delete, or freeze user accounts with role-based permissions.  
 - **Person Management:** Register new people and manage their personal information.  
 - **License Services:**  
-  - Issue new driving licenses for various categories.  
+  - Issue new driving licenses for different categories.  
   - Renew, replace lost or damaged licenses.  
   - Release detained licenses.  
   - Issue international driving licenses.  
@@ -27,81 +28,89 @@ It follows a **3-tier architecture** and uses **ADO.NET** to interact with a **S
 
 ---
 
-## 🧱 Technologies Used
-- **C# (.NET Framework 4.7.2)**  
-- **Windows Forms**  
-- **ADO.NET** (SQL Connection, Command, Adapter, DataTable)  
-- **SQL Server LocalDB**  
+## 🏗️ Project Structure
 
----
-
-## 🧩 Project Structure
-The project follows a **three-tier architecture** to improve organization and maintainability:
 Project  
 │  
-├── DVLD → User Interface Layer (Windows Forms)   
-│ ├── Applications  
-│ ├── Drivers   
-│ ├── Licenses   
-│ ├── Login   
-│ ├── People   
-│ ├── Tests   
-│ └── User   
-│    
-├── DVLD_Business → Business Logic Layer   
-│ └── (Contains classes for managing system operations)  
-│   
-└── DVLD_DataAccess → Data Access Layer  
-└── (Handles database connections using ADO.NET)   
-
+├───DVLD # User Interface (Windows Forms)  
+│ ├───Applications  
+│ ├───Drivers  
+│ ├───Licenses  
+│ ├───People  
+│ ├───Login  
+│ ├───Tests  
+│ ├───User  
+│ └───Global Classes  
+│  
+├───DVLD_Business # Business Logic Layer  
+│  
+└───DVLD_DataAccess # Data Access Layer (ADO.NET + SQL)  
 
 
 ---
 
-## 🗄️ Database Setup
-The system uses a local SQL Server database named `DVLD.mdf`.
+## 🗃️ Database
 
-### Steps to attach the database
-1. Open **SQL Server Management Studio (SSMS)**.  
-2. Right-click **Databases → Attach**.  
-3. Browse to the project folder and select `DVLD.mdf`.  
-4. Click **OK** to attach the database.  
-5. Make sure your project connection string points to the correct database file.
+- **Database Name:** `DVLD.mdf`  
+- **Type:** SQL Server (LocalDB)  
+- **Connection:** Uses ADO.NET with standard SQL queries and stored procedures.  
+- The database contains tables for:
+  - Persons  
+  - Users  
+  - Applications  
+  - Licenses  
+  - Tests  
+  - Application Types  
+  - License Classes  
 
-Example connection string:
-
-Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DVLD.mdf;Integrated Security=True;
-
----
-## ▶️ How to Run
-
-1. Open the solution file DVLD.sln in Visual Studio.
-
-2. Make sure the startup project is set to DVLD (the UI layer).
-
-3. Check that the database DVLD.mdf is attached and the connection string is correct.
-
-4. Press F5 or click Start to run the application.
-
-5. Login using the credentials stored in the Users.txt file.
+> ⚠️ Make sure the `.mdf` file is properly attached to your SQL Server LocalDB instance before running the project.
 
 ---
 
-## 🔑 Login Information
+## 🔐 Login Information
 
-The system requires a username and password to access the dashboard.  
-Login data is stored in the file:
+The login data is stored in the local text file: 
 
-DVLD\bin\Debug\data.txt
+ DVLD\bin\Debug\data.txt
+
+> Open this file to find the default usernames and passwords used for logging into the system.
+
+Example credentials:
 
 - **Username:** Msaqer77  
 - **Password:** 1234
+---
+
+## ⚙️ Technologies Used
+
+- **Language:** C#  
+- **Framework:** .NET Framework 4.7.2  
+- **Database:** SQL Server LocalDB (`.mdf`)  
+- **Data Access:** ADO.NET  
+- **Architecture:** 3-Tier (Presentation, Business Logic, Data Access)  
+- **IDE:** Visual Studio  
 
 ---
 
-🖼️ Screenshots
+## 🧠 Purpose
 
-You can include screenshots to demonstrate how the system works:
+This project was developed for learning purposes to understand:
+- How to design a real-world system with layered architecture.  
+- How to use ADO.NET for data management.  
+- How to organize a medium-size C# project.  
 
 ---
 
+## 📸 Screenshots (Optional)
+
+You can add screenshots of your system here by uploading images to your repository and using this format:
+
+```markdown
+![Login Screen](images/login_screen.png)
+![Main Dashboard](images/dashboard.png)
+
+## 🧾 License
+
+This project is created for educational use and is not intended for commercial distribution.
+
+  
