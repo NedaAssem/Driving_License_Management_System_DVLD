@@ -63,7 +63,6 @@ Project
   - Application Types  
   - License Classes  
 
-> ⚠️ Make sure the `.mdf` file is properly attached to your SQL Server LocalDB instance before running the project.
 
 ---
 
