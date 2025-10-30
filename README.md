@@ -53,7 +53,7 @@ Project
 
 - **Database Name:** `DVLD.mdf`  
 - **Type:** SQL Server (LocalDB)  
-- **Connection:** Uses ADO.NET with standard SQL queries and stored procedures.  
+- **Connection:** Uses ADO.NET with standard SQL queries.
 - The database contains tables for:
   - Persons  
   - Users  
