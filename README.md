@@ -102,10 +102,11 @@ Example credentials to test the system:
 - **Username:** Msaqer77  
 - **Password:** 1234
 
+---
 
 🖼️ Screenshots
 
 You can include screenshots to demonstrate how the system works:
 
-
+---
 
