@@ -9,7 +9,7 @@ The system was built for academic learning purposes and focuses on database mana
 
 ## 🧩 Features
 
-- **User Management:** Add, update, delete, or freeze user accounts with role-based permissions.  
+- **User Management:** Add, update, delete, or freeze user accounts.  
 - **Person Management:** Register new people and manage their personal information.  
 - **License Services:**  
   - Issue new driving licenses for different categories.  
