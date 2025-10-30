@@ -107,13 +107,11 @@ This project was developed for learning purposes to understand:
 
 ---
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots 
 
-You can add screenshots of your system here by uploading images to your repository and using this format:
-
-```markdown
 ![Login Screen](images/login_screen.png)
 ![Main Dashboard](images/dashboard.png)
+
 
 ## 🧾 License
 
